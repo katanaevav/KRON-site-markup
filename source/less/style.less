@@ -1,0 +1,88 @@
+@import "node_modules/normalize.less/normalize.less";
+@import "./variables.less";
+
+@font-face {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gotham Pro"), local("Gotham Pro Regular"),
+       url("../fonts/GothamPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Gotham Pro"), local("Gotham Pro Bold"),
+       url("../fonts/GothamPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Gotham Pro"), local("Gotham Pro Medium"),
+       url("../fonts/GothamPro-Medium.woff") format("woff");
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 11px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+}
+
+
+
+/* Размеры скроллбара */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Трек поле скроллбара */
+::-webkit-scrollbar-track {
+  background: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background: none;
+  border: 3px solid #116E77;
+  border-radius: 3px;
+}
+
+
+@import "./loading-page/loading-page.less";
+@import "./main-page/main-page.less";
+
