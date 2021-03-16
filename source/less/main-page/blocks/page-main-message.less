@@ -53,14 +53,33 @@
   line-height: 31px;
   font-weight: bold;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .message-window__button--ok {
-  background-color: #333F50;
+  background-color: @font-color;
+
+  &:hover {
+    background-color: @font-color-hover;
+  }
 }
 
 .message-window__button--cancel {
-  background-color: #7F241E;
+  // background-color: #7F241E;
+  background-color: #FFFFFF;
+  color: #7F241E;
+  border: 2px solid #7F241E;
+
+  &:hover {
+    background-color: #7F241E;
+    color: #FFFFFF;
+  }
+
+  &:disabled {
+    background-color: #7F241E;
+    color: #FFFFFF;
+    opacity: 50%;
+  }
 }
 
 
