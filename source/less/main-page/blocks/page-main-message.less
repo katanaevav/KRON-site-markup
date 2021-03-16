@@ -1,0 +1,77 @@
+.page-main__modal-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  // opacity: 50%;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-window {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 18px rgba(6,7,7,0.34);
+  position: absolute;
+  border-radius: 10px;
+  max-width: 450px;
+  padding-top: 10px;
+  padding-bottom: 29px;
+}
+
+.message-window__header {
+  color: #7F241E;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333F50;
+}
+
+.message-window__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.message-window__text {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: bold;
+  color: @font-color;
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
+  padding-bottom: 21px;
+}
+
+.message-window__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.message-window__button {
+  width: 190px;
+  padding: 1px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.message-window__button--ok {
+  background-color: #333F50;
+}
+
+.message-window__button--cancel {
+  background-color: #7F241E;
+}
