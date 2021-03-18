@@ -96,3 +96,78 @@
   color: @font-color;
   text-align: center;
 }
+
+
+
+
+
+
+
+.form-radio__label {
+  padding-top: 4px;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-radio__label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -41px;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #E9E9E9;
+}
+
+.form-radio__label:hover::before,
+.form-radio__label:focus::before {
+  background-color: #dbdbdb;
+}
+
+.form-radio__label:active::before {
+  background-color: #aaaaaa;
+}
+
+.form-radio__input:checked ~ .form-radio__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -31px;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form-radio__input:checked ~ .form-radio__label:active::after {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+.form-checkbox__label {
+  // padding-top: 3px;
+  font-size: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #E9E9E9;
+}

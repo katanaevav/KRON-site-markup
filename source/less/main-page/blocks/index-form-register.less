@@ -1,0 +1,61 @@
+.form-register {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 40px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+
+  .form-register__fields-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // flex-wrap: wrap;
+    // width: 100%;
+
+  }
+
+  .form-radio {
+    padding-left: 44px;
+    padding-top: 19px;
+
+    &:first-child {
+      padding-right: 7px;
+    }
+  }
+
+  .page-main__form-input-text--birthday {
+    flex-grow: 1;
+    margin-left: 26px;
+    // width: 100%;
+    min-height: 50px;
+    width: 30px;
+  }
+
+
+  .form-checkbox {
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+
+  .page-main__form-button--submit {
+    margin-bottom: 0;
+    margin-top: 31px;
+  }
+
+  .page-main__form-link {
+    margin-top: 22px;
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+  .form-register {
+    padding: 27px 120px;
+    padding-bottom: 0;
+  }
+
+  .form-register__fields-wrapper {
+    flex-wrap: nowrap;
+  }
+}
