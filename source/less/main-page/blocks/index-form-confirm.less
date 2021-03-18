@@ -1,0 +1,57 @@
+.form-confirm {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-confirm__text {
+  text-align: center;
+  font-size: 19px;
+  line-height: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.form-confirm__text--first {
+  font-weight: bold;
+  padding-top: 45px;
+}
+
+.form-confirm__text--second {
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 32px;
+}
+
+.form-confirm__digits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.form-confirm__digit {
+  -moz-appearance: textfield;
+  width: 51px;
+  margin-right: 17px;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 35px;
+  // font-weight: bold;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form-confirm__digit::-webkit-inner-spin-button {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .form-confirm__text {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
